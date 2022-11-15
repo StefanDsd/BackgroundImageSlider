@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <BackgroundSlider />
-      <div className="react-player">
+      {/* <div className="react-player">
         <ReactPlayer
           width="720px"
           height="360px"
@@ -14,7 +14,7 @@ function App() {
           url="https://www.youtube.com/watch?v=7sDY4m8KNLc"
           autoPlay
         />
-      </div>
+      </div> */}
     </div>
   );
 }
