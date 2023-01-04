@@ -16,11 +16,15 @@ const BackgroundSlider = () => {
         },5000)
         return ()=> clearTimeout(timer)
     },[currentState])
+
+    
     const bgImageStyle={
         backgroundImage: `url(${imageSlide[currentState].url})`,
         backgroundPosition: 'center',
+        width: '100%',
         backgroundSize: 'cover',
-        height: '100%'
+        height: '100%',
+        margin: '10px',
     }
     const goToNext = (currentState) => {
         setCurrentState(currentState)
@@ -29,10 +33,10 @@ const BackgroundSlider = () => {
   return (
     <div className='container-style '>
         <ReactPlayer
-          width="720px"
-          height="360px"
+          width="1290px"
+          height="890px"
           controls
-          url="https://www.youtube.com/watch?v=7sDY4m8KNLc"
+          url="https://www.youtube.com/watch?v=Y_plhk1FUQA"
           autoPlay
         />
         <div className='transparent-background'></div>
@@ -54,5 +58,6 @@ const BackgroundSlider = () => {
     </div>
   )
 }
+
 
 export default BackgroundSlider
